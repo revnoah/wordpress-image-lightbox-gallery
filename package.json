@@ -1,11 +1,12 @@
 {
   "name": "image-lightbox-gallery",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Adds a lightbox option to the core image block.",
   "main": "build/index.js",
   "scripts": {
     "build": "wp-scripts build src/index.js src/view.js",
-    "start": "wp-scripts start src/index.js src/view.js"
+    "start": "wp-scripts start src/index.js src/view.js",
+    "copy:vendor": "mkdir -p vendor/js vendor/css && cp node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js vendor/js/ && cp node_modules/@fancyapps/ui/dist/fancybox/fancybox.css vendor/css/"
   },
   "devDependencies": {
     "@wordpress/hooks": "^4.16.0",
