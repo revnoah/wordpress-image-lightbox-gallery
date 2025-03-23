@@ -1,0 +1,4 @@
+/* Basic styles for lightbox-enabled images */
+.wp-block-image.lightbox-enabled {
+    cursor: pointer;
+}
